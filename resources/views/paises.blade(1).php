@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Paises de la regiónn</h1>
+    <h1>Paises de la región</h1>
     <table class="table table-striped">
         <thead>
             <tr>
