@@ -15,8 +15,8 @@
       </div>
       <div class="row">
         <div class="input-field col s8">
-        <textarea class="materialize-textarea" id="descripcion"  name="descripcion"></textarea>
-          <label for="descripcion">descripcion</label>
+        <textarea class="materialize-textarea" id="descrpcion"  name="desc"></textarea>
+          <label for="descrpcion">descripcion</label>
         </div>
       </div>
       <div class="row">

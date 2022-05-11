@@ -46,7 +46,7 @@ class ProductoController extends Controller
         //crear una estidad producto
         $p = new Producto();
         $p->nombre = $request->nombre;
-        $p->descripcion = $request->descripcion;
+        $p->descrpcion = $request->desc;
         $p->precio = $request->Precio;
         $p->marca_id = $request->marca;
         $p->categoria_id = $request->categoria;
