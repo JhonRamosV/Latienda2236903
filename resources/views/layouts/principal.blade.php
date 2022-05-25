@@ -23,6 +23,9 @@
 <script src="{{ asset ('materialize/js/materialize.js') }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+
+    let tabs = document.querySelector(".tabs")
+    var instance = M.Tabs.init(tabs);
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems,[]);
   });
