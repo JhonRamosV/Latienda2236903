@@ -1,16 +1,19 @@
 @extends('layouts.principal')
 
 @section('contenido')
+
 <div class="row">
   <h1 class="#00bfa5 teal-text text-accent-4"> Nuevo Producto</h1>
     <form method="POST"
     action="{{ route('productos.store') }}" 
-    class="col s12">
+    class="col s12"
+    enctype="multipart/form-data">
+
     @csrf
     @if(session('mensaje'))
     <div class="row">
       <div class="col s8">
-        <span class="#00796b teal-text text-darken-2">
+        <span class="#1a237e indigo-text text-darken-4">
 
         {{ session('mensaje') }}
 
@@ -49,7 +52,9 @@
       <div class="btn">
         <span>Imagen de Producto</span>
         <input type="file" name="Imagen">
+        
       </div>
+      <apan class="#e65100 orange-text text-darken-4">{{ $errors->first('Imagen')}}</span>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">
       </div>
