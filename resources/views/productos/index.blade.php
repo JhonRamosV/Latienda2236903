@@ -6,6 +6,13 @@
 
    <h1 class="cyan-text text-lighten-1"> Catalago de Produtos </h1>
    </div>
+   @if(session('mensajito'))
+   <dib>
+       <p>{{ session('mensajito')}} 
+           <a href="{{ url('cart') }}">
+
+           </a></p>
+   </div>
 @foreach($productos as $producto)
 <div class="row container">
     <div class="col s6">
@@ -21,7 +28,7 @@
                 <li> Precio:{{$producto -> precio}}</li>
                 </ul>
             </div>
-                <a href="">Ver Detalless</a>
+                <a href="{{ route('productos.show' , $producto ->id) }}">Ver Detalles</a>
                 <br>
                 <a href="productos/create" >Crear producto</a>
     

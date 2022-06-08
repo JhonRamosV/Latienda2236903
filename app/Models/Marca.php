@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Marca extends Model
 {
     use HasFactory;
+    //realcionar una marca con los productos
+
+    function productos()
+    {
+
+        //retornar los productos de la marca
+        return $this -> hasMany(Producto::class);
+
+    }
 }
