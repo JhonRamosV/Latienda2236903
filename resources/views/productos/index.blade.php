@@ -9,10 +9,11 @@
    @if(session('mensajito'))
    <dib>
        <p>{{ session('mensajito')}} 
-           <a href="{{ url('cart') }}">
-
+           <a href="{{url('cart')}} ">
+                Ir al carrito
            </a></p>
    </div>
+   @endif
 @foreach($productos as $producto)
 <div class="row container">
     <div class="col s6">
@@ -28,9 +29,9 @@
                 <li> Precio:{{$producto -> precio}}</li>
                 </ul>
             </div>
-                <a href="{{ route('productos.show' , $producto ->id) }}">Ver Detalles</a>
+                <a href="{{ url('productos/'.$producto ->id) }}">Ver Detalles</a>
                 <br>
-                <a href="productos/create" >Crear producto</a>
+                <a href="{{ url('productos/create')}}" >Crear producto</a>
     
             
             </div>

@@ -89,4 +89,4 @@ Route::get('prueba', function(){
  * 
  */
 Route::resource('productos', ProductoController::class);
-Route::resource(' cart' , CartController::class,['only' => ['index' , 'store' ,'destroy']]);
+Route::resource('cart' , CartController::class,['only' => ['index' , 'store' ,'destroy']]);
