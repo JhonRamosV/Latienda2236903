@@ -34,8 +34,8 @@
                 <div class="col s4 input-field">
                     <select name="cantidad" id="cantidad">
                         <option value="1">1</option>
-                        <option value="1">2</option>
-                        <option value="1">3</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <label for="Cantidad">Cantidad:</label>
                 </div>
